@@ -1,2 +1,19 @@
 [
+	{ "keys": ["ctrl+b"], "command": "unbound" },
+	{ "keys": ["ctrl+b", "o"], "command": "unbound"},
+	{ "keys": ["ctrl+b", "0"], "command": "focus_group", "args": { "group": 0 } },
+	{ "keys": ["ctrl+b", "1"], "command": "focus_group", "args": { "group": 1 } },
+	{ "keys": ["ctrl+b", "3"], "command": "focus_group", "args": { "group": 2 } },
+	{ "keys": ["ctrl+b", "4"], "command": "focus_group", "args": { "group": 3 } },
+
+	{ "keys": ["ctrl+shift+o"], "command": "prompt_open_file" },
+	{ "keys": ["ctrl+o"], "command": "exit_insert_mode",
+		"context": 
+		[
+			{"key": "setting.command_mode", "operand": false },
+			{"key": "setting.is_widget", "operand": false }
+		]
+	},
+
+	{ "keys": ["ctrl+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }
 ]
