@@ -1,2 +1,6 @@
 [
+	{ "keys": ["command+b"], "command": "unbound" },
+	{ "keys": ["command+b", "o"], "command": "unbound"},
+	{ "keys": ["command+b", "0"], "command": "focus_group", "args": { "group": 0 } },
+	{ "keys": ["command+b", "1"], "command": "focus_group", "args": { "group": 1 } }
 ]
